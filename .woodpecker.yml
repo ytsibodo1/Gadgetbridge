@@ -1,0 +1,7 @@
+pipeline:
+  test:
+    image: androidsdk/android-30
+    commands:
+      - pwd
+      - ls -ls
+      - ./gradlew assembleDebug --stacktrace
